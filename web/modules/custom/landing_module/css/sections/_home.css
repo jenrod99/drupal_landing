@@ -1,0 +1,424 @@
+.home-text,
+.home-text-white,
+.mobile-text {
+    color: white;
+    margin: 0 auto;
+}
+
+.home-text {
+    margin: 6rem 0 3rem 0;
+}
+
+.home-text h1,
+.home-text h2 {
+    max-width: 700px;
+    text-align: center;
+    margin: 32px auto;
+}
+
+.home-text h1 {
+    font-size: var(--fontSize-11);
+}
+
+.home-text h2 {
+    font-size: var(--fontSize-5);
+    font-weight: 600;
+}
+
+.home-text-white.text-form {
+    text-align: center;
+    font-size: var(--fontSize-4);
+    max-width: 400px;
+}
+
+.form-car-image {
+    width: 70%;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.mobile-text-container {
+    display: none;
+}
+
+.experiencias {
+    margin: 7% auto 2% auto;
+}
+
+.content-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.open-dialog-text {
+    color: var(--rojo-primario);
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+.open-dialog-text:hover {
+    cursor: pointer;
+}
+
+.background {
+    position: absolute;
+    background-image: url("../../img/bg-home.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    max-height: 700px;
+    transform: translateY(-200px);
+    width: 100%;
+    z-index: -2;
+}
+
+.titulos-home {
+    width: 45%;
+}
+
+.titulos-home h1 {
+    margin: 0 0 5px 0;
+    font-size: var(--fontSize-11);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.titulos-home.blanco {
+    color: white;
+}
+
+.linea {
+    height: 2px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.franja.beneficios,
+.franja.contacto,
+.franja.comentarios {
+    position: relative;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.franja {
+    background-color: var(--rojo-primario);
+    height: 2.7rem;
+    width: 100%;
+}
+
+.amarillo {
+    background-color: var(--amarillo-contraste);
+}
+
+.rojo {
+    background-color: var(--rojo-primario);
+}
+
+.beneficio-icon {
+    font-size: 4rem;
+    margin: 0 1rem;
+}
+
+.beneficios-title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.beneficio-description-container p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.beneficio-description-container h3 {
+    font-weight: 800;
+    font-size: 18px;
+    margin: 0;
+}
+
+.comment-item {
+    display: flex;
+    width: 500px;
+    margin: 17px auto;
+    padding: 1rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.user-name {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.user-icon {
+    align-self: center;
+    font-size: 3rem;
+}
+
+.icon-user {
+    font-size: 3rem;
+}
+
+.puntuacion {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.puntuacion img {
+    width: 30px;
+    height: 30px;
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    align-self: center;
+}
+
+.comment p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.contacto h1,
+.contacto h2,
+.contacto p {
+    margin: 5px 0 0 0;
+}
+
+.contacto h1 {
+    color: var(--rojo-primario);
+}
+
+.contacto h2 {
+    font-weight: 800;
+}
+
+.contacto p {
+    color: var(--gris-500);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+    .titulos-home {
+        width: 100%;
+    }
+    .titulos-home h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .background {
+        min-height: 700px;
+        max-height: 700px;
+    }
+    .home-text {
+        padding: 0;
+    }
+    .beneficio-description-container p {
+        font-size: 14px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .franja.beneficios,
+    .franja.contacto,
+    .franja.comentarios {
+        position: relative;
+        width: 100%;
+    }
+    .franja.comentarios {
+        top: -123px;
+    }
+    .franja.beneficios {
+        top: -200px;
+    }
+    .franja.contacto {
+        top: -105px;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    .background {
+        height: 650px;
+    }
+    .home-text {
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .home-text p {
+        display: none;
+    }
+    .home-text h1,
+    .home-text h2 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .mat-typography h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .titulos-home {
+        width: 100%;
+    }
+    .titulos-home h1 {
+        text-align: center;
+    }
+    .beneficio-description-container p {
+        font-size: 14px;
+    }
+    .comment-item {
+        min-width: 400px;
+        max-width: 400px;
+        height: 120px;
+    }
+    .user-name {
+        font-size: 1rem;
+    }
+    .comment p {
+        font-size: 80%;
+        line-height: 1.2;
+    }
+    .puntuacion {
+        width: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .owl-carousel .owl-item img {
+        width: 15px;
+        height: 15px;
+    }
+    .franja.beneficios,
+    .franja.contacto,
+    .franja.comentarios {
+        position: relative;
+        width: 100%;
+    }
+    .franja.comentarios {
+        top: -116px;
+    }
+    .franja.beneficios {
+        top: -205px;
+    }
+    .franja.contacto {
+        top: -80px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .background {
+        min-height: 600px;
+        max-height: 600px;
+        z-index: -2;
+    }
+    .titulos-home {
+        width: 100%;
+    }
+    .titulos-home h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    .home-text {
+        margin-top: 4rem;
+    }
+    .home-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+    .home-text h2 {
+        padding: 16px;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    .mobile-text-container {
+        display: block;
+        width: 300px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mat-raised-button.mobile-button {
+        margin: 10px 0;
+    }
+    .btn-primary.mobile-button {
+        width: 220px;
+        background-color: white;
+        color: var(--gris-900);
+    }
+    .mobile-text {
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+    }
+    .experiencias {
+        margin: 1rem auto;
+    }
+    .franja.beneficios,
+    .franja.contacto,
+    .franja.comentarios {
+        position: relative;
+        width: 100%;
+    }
+    .franja.beneficios,
+    .franja.contacto,
+    .franja.comentarios {
+        top: 0;
+    }
+    .comment-item {
+        min-width: 280px;
+        max-width: 280px;
+    }
+    .owl-carousel .owl-item img {
+        width: 15px;
+        height: 15px;
+    }
+    .user-info {
+        width: 200px;
+    }
+    .user-name,
+    .beneficio-description-container p,
+    .comment>p {
+        font-size: 14px;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+    .puntuacion {
+        width: 70px;
+    }
+    .beneficio-icon {
+        font-size: 3rem;
+    }
+    .beneficio-description-container p {
+        width: 220px;
+    }
+    .contacto h1,
+    .contacto h2,
+    .contacto p {
+        margin-bottom: 5px;
+    }
+    .titulos-home h1 {
+        font-size: 1.8rem;
+    }
+    .experiencias {
+        margin: 0;
+    }
+}

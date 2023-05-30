@@ -1,0 +1,6 @@
+landing_module.home:
+  path: '/landing/home'
+  defaults:
+    _controller: '\Drupal\landing_module\Controller\LandingModuleController::mapPageContent'
+  requirements: 
+    _permission: 'access content'

@@ -1,0 +1,43 @@
+body {
+    font-family: "Raleway";
+    font-weight: 400;
+    margin: 0;
+    color: black;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+a,
+.link {
+    text-decoration: none;
+    color: purple;
+    &:hover {
+        color: green;
+        cursor: pointer;
+    }
+}
+
+.back-link {
+    display: inline-flex;
+}
+
+.back-link span {
+    margin-right: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+hr {
+    box-sizing: content-box;
+    overflow: visible;
+    margin: 14px 0;
+    border: 1px dashed black;
+}
+
+ul {
+    padding-left: 0;
+}

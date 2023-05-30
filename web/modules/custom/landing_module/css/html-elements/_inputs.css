@@ -1,0 +1,83 @@
+.form-container__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.3rem;
+}
+
+.form-container__input__label {
+    font-weight: 600;
+    font-size: var(--fontSize-2);
+    color: var(--gris-800);
+    margin: 10px 0 5px 0;
+    min-width: 300px;
+}
+
+.form-container__input__input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--gris-600);
+    background-color: white;
+    font-size: var(--fontSize-3);
+    transition: all .2s ease-in-out;
+}
+
+.form-container__input__input:active,
+.form-container__input__input:focus,
+.form-container__input__input:focus-visible {
+    border-color: var(--rojo-500);
+    box-shadow: 0px 0px 12px var(--rojo-100);
+    outline: 1px solid var(--rojo-500);
+}
+
+.form-container__input__input:disabled {
+    font-style: italic;
+}
+
+.form-container__input__error,
+.form-container__input__error label,
+.form-container__input__error-message,
+.form-container__input__error label span {
+    color: var(--error);
+    font-size: var(--fontSize-2);
+}
+
+.form-container__input__error label span {
+    font-size: var(--fontSize-3);
+}
+
+.form-input__input__error,
+.form-input__input,
+.form-input__textarea {
+    border-color: var(--error);
+    background-color: var(--bg-error);
+}
+
+.form-input__input--message {
+    margin-top: 3px;
+}
+
+.form-input__checkbox label,
+.form-input__checkbox:hover {
+    cursor: pointer;
+}
+
+.form-input__checkbox label span,
+.form-input__checkbox:hover span {
+    margin-left: 10px;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.form-container__button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .form-input {
+        margin-bottom: 16px;
+    }
+}

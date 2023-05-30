@@ -1,0 +1,9 @@
+name: "Landing Module"
+type: module
+core_version_requirement: ^8 || ^9
+
+description: "Custom landing-module. It shows a custom Drupal landing."
+version: 1.0.0
+package: "Landing Module"
+dependencies:
+  - drupal:node

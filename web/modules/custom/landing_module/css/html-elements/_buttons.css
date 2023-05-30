@@ -1,0 +1,91 @@
+button {
+    border: 1px solid transparent;
+    font-family: "Raleway";
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    white-space: nowrap;
+    width: fit-content;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: var(--fontSize-3);
+}
+
+button:hover {
+    border: 1px solid transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+button:disabled,
+button:disabled:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    background: var(--gris-500);
+    background-color: var(--gris-500);
+    border: 1px solid var(--gris-600);
+    color: var(--gris-700);
+    transform: none;
+}
+
+button:not(:disabled):not(.disabled):focus,
+button:not(:disabled):not(.disabled).focus,
+button:focus {
+    box-shadow: 0 0 3px 1px;
+    border: 1px solid transparent;
+}
+
+button:not(:disabled):not(.disabled):active,
+button:not(:disabled):not(.disabled).active,
+button:active {
+    border: 1px solid transparent;
+    transition: all 0.1s ease;
+    transform: scale(1);
+}
+
+button:first-child,
+button:last-child,
+button:last-of-type {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+button:first-child,
+button:first-of-type {
+    margin-left: 0;
+}
+
+.primary-button {
+    background-color: var(--rojo-primario);
+    background: var(--rojo-primario);
+    border-color: var(--rojo-primario);
+    color: white;
+}
+
+.primary-button:hover {
+    background: var(--rojo-700);
+    background-color: var(--rojo-700);
+    border-color: var(--rojo-700);
+}
+
+button:not(:disabled):not(.disabled):focus,
+button:not(:disabled):not(.disabled).focus,
+button:focus,
+button:not(:disabled):not(.disabled):active,
+button:not(:disabled):not(.disabled).active,
+button:active {
+    background: var(--rojo-600);
+    background-color: var(--rojo-600);
+    box-shadow: 0 0 3px 1px var(--rojo-100);
+    border-color: var(--rojo-primario);
+}

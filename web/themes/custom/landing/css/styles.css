@@ -1,0 +1,12 @@
+@import url(settings/colors.css);
+
+/* @import url(components/nav-bar.css); */
+
+.body-text {
+    color: red;
+    font-size: 3rem;
+}
+
+.layout-content {
+    background-color: aqua;
+}

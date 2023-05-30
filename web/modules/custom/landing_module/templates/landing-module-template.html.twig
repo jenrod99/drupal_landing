@@ -1,0 +1,106 @@
+<div class="background">
+</div>
+<div class="home-text">
+    <h1>Cotiza y compra el seguro todo riesgo de tu vehículo</h1>
+    <h2>Descubre todas las opciones que tenemos para ti y tu vehículo</h2>
+</div>
+<div class="row-a">
+    <div class="column-a home-form">
+        <p class="home-text-white text-form">Realiza tu cotización completamente gratis</p>
+        <div class="form-container form-placa-container">
+            <span class="mapfre-car-icon ntab-ico"></span>
+            <form [formGroup]="placaVehiculo" id="formAuto">
+                <div class="form-container__input">
+                    <label class="form-container__input__label" for="plate">Placa</label>
+                    <input class="form-container__input__input" type="text" name="pate" id="plate" maxlength="6">
+                    <small class="form-container__input__hint"> Ejemplo HJK 123 </small>
+                </div>
+
+                <p click="cotizarSinPlaca()" class="open-dialog-text">Cotizar sin placa</p>
+                <div class="form-container__button-container">
+                    <button class="primary-button" type="button" type="submit" id="sendPlate" value="Continuar">
+                        CONTINUAR </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="mobile-text-container">
+        <p class="mobile-text">Encuentra el seguro de MAPFRE a tu medida</p>
+        <a type="button" click="cotizarEnMovil()" class="btn-primary mobile-button mat-raised-button">COTIZA
+            GRATIS</a>
+    </div>
+</div>
+<div class="experiencias">
+    <div class="flex-container">
+        <div class="lineas-container">
+            <div class="franja comentarios rojo"></div>
+            <div class="linea rojo"></div>
+        </div>
+        <div class="titulos-home blanco">
+            <h1 class="">Nuestros clientes</h1>
+        </div>
+        <div class="comments-container">
+            {% for comment in comments %}
+            <div class="beneficio-description-container">
+                <div class="comment-item">
+                    <div class="user-info">
+                        <div class="user-icon">
+                            <span class="{{ comment.userIcon }}"></span>
+                        </div>
+                        <p class="user-name"> {{comment.userName}} </p>
+                        <div class="puntuacion">
+                            <img src="{{ comment.userStars.starPath1 }}">
+                            <img src="{{ comment.userStars.starPath2 }}">
+                            <img src="{{ comment.userStars.starPath3 }}">
+                            <img src="{{ comment.userStars.starPath4 }}">
+                            <img src="{{ comment.userStars.starPath5 }}">
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p> {{comment.userComment}} </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="flex-container">
+    <div class="lineas-container">
+        <div class="franja beneficios amarillo"></div>
+        <div class="linea amarillo"></div>
+    </div>
+    <div class="titulos-home">
+        <h1 class="">Nuestros beneficios</h1>
+    </div>
+    <div class="white-container">
+        {% for ben in benefits %}
+        <div class="beneficio-description-container">
+            <div class="beneficio-icon">
+                <span class="{{ben.icon}}"></span>
+            </div>
+            <div class="beneficio-descripcion">
+                <h3 class="beneficio-subtitle"> {{ben.title}} </h3>
+                <p class="mat-body"> {{ben.description}} </p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="lineas-container">
+        <div class="franja contacto rojo"></div>
+        <div class="linea rojo"></div>
+    </div>
+    <div class="titulos-home blanco">
+        <h1 class="">Contáctanos</h1>
+    </div>
+    <div class="white-container contacto">
+        <h2>Atención al cliente</h2>
+        <h1>(57 - 1) 5801212</h1>
+        <p>contacto@alseguros.co</p>
+    </div>
+
+</div>

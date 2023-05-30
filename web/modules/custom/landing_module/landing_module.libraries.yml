@@ -1,0 +1,5 @@
+landing_module:
+  version: 1.x
+  css:
+    theme:
+      css/styles.css: {}

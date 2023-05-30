@@ -1,0 +1,6 @@
+name: Landing Theme
+type: theme
+description: Landing Page Theme
+version: 1.0.0
+core_version_requirement: ^8
+base_theme: false

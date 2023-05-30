@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function landing_module_theme($existing, $type, $theme, $path)
+{
+    return [
+        'nav_bar_template' => [
+            'variables' => [
+                'value' => NULL,
+            ],
+        ],
+        'landing_module_template' => [
+            'variables' => [
+                'body' => NULL,
+                'comments' => NULL,
+                'benefits' => NULL
+            ]
+        ],
+        'footer_template' => [
+            'variables' => [
+                'body' => NULL,
+                'comments' => NULL,
+                'benefits' => NULL
+            ]
+        ],
+    ];
+}

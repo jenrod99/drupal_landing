@@ -1,0 +1,25 @@
+/* Fuente */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway-v14-latin-900.woff") format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway-v14-latin-800.woff") format('woff');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway-v14-latin-regular.woff") format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/raleway-v14-latin-300.woff") format('woff');
+    font-weight: 300;
+}
