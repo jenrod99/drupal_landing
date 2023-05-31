@@ -16,8 +16,8 @@
     --rojo-200: hsl(0, 81%, 84%);
     --rojo-100: hsl(0, 100%, 92%);
     --rojo-primario: hsl(7, 100%, 39%);
-    --error: hsla(360, 100%, 50%, 1);
-    --bg-error: hsla(360, 100%, 90%, 1);
+    --error: hsla(360, 100%, 43%, 1);
+    --bg-error: hsla(360, 100%, 95%, 1);
     --amarillo-900: hsl(38, 100%, 10%);
     --amarillo-800: hsl(38, 91%, 20%);
     --amarillo-700: hsl(38, 80%, 30%);

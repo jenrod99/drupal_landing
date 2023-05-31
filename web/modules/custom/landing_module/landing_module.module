@@ -9,13 +9,32 @@ function landing_module_theme($existing, $type, $theme, $path)
         'nav_bar_template' => [
             'variables' => [
                 'value' => NULL,
+                'landingIsActive' => false,
             ],
         ],
         'landing_module_template' => [
             'variables' => [
-                'body' => NULL,
                 'comments' => NULL,
                 'benefits' => NULL
+            ]
+        ],
+        'person_form_template' => [
+            'variables' => [
+                'title' => NULL,
+                'paragraph' => NULL
+            ]
+        ],
+        'city_background_template' => [
+            'variables' => []
+        ],
+        'resume_template' => [
+            'variables' => [
+                'name' => NULL,
+                'documentType' => NULL,
+                'documentNumber' => NULL,
+                'genre' => NULL,
+                'age' => NULL,
+                'vehicle_plate' => NULL,
             ]
         ],
         'footer_template' => [
@@ -24,6 +43,6 @@ function landing_module_theme($existing, $type, $theme, $path)
                 'comments' => NULL,
                 'benefits' => NULL
             ]
-        ],
+        ]
     ];
 }

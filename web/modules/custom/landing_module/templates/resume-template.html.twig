@@ -1,0 +1,29 @@
+<div class="section-form-container">
+    <div class="forms-text">
+        <p class="form-title">Gracias por confiar en nosotros</p>
+        <p>
+            Estos son los datos de tu cotización.
+        </p>
+    </div>
+    <div class="row-a resume-container">
+        <div class="column-a resume-info-content">
+            {% if genre == 'Femenino' %}
+            <span class="mapfre-women-icon"></span> {% else %}
+            <span class="mapfre-men-icon"></span> {% endif %}
+            <p>Nombre: {{ name }}</p>
+            <p>Documento: {{ documentType }}. {{ documentNumber }}</p>
+            <p>Edad: {{ age }}</p>
+        </div>
+        <div class="column-a resume-info-content">
+            <span class="mapfre-car-icon"></span>
+            <p>{{vehicle_plate}}</p>
+            <p>Automóvil</p>
+        </div>
+        <div class="column-a resume-info-content">
+            <span class="mapfre-super-trebol-secure-icon"></span>
+            <p>Seguro Súper Trebol | MAPFRE</p>
+            <p>Valor del seguro: $250.000,00 </p>
+            <p>Número de cuotas: 3</p>
+        </div>
+    </div>
+</div>

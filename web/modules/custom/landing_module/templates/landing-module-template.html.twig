@@ -1,4 +1,4 @@
-<div class="background">
+<!-- <div class="background">
 </div>
 <div class="home-text">
     <h1>Cotiza y compra el seguro todo riesgo de tu vehículo</h1>
@@ -9,20 +9,19 @@
         <p class="home-text-white text-form">Realiza tu cotización completamente gratis</p>
         <div class="form-container form-placa-container">
             <span class="mapfre-car-icon ntab-ico"></span>
-            <form [formGroup]="placaVehiculo" id="formAuto">
+            <form>
                 <div class="form-container__input">
-                    <label class="form-container__input__label" for="plate">Placa</label>
-                    <input class="form-container__input__input" type="text" name="pate" id="plate" maxlength="6">
+                    {{form.vehicle_plate}}
                     <small class="form-container__input__hint"> Ejemplo HJK 123 </small>
                 </div>
 
                 <p click="cotizarSinPlaca()" class="open-dialog-text">Cotizar sin placa</p>
                 <div class="form-container__button-container">
-                    <button class="primary-button" type="button" type="submit" id="sendPlate" value="Continuar">
-                        CONTINUAR </button>
+                    {{form.actions}}http://drupal-landing-page.localhost/admin/help
                 </div>
-            </form>
 
+                {{form.form_token}} {{form.form_build_id}} {{form.form_id}}
+            </form>
         </div>
     </div>
     <div class="mobile-text-container">
@@ -30,7 +29,7 @@
         <a type="button" click="cotizarEnMovil()" class="btn-primary mobile-button mat-raised-button">COTIZA
             GRATIS</a>
     </div>
-</div>
+</div> -->
 <div class="experiencias">
     <div class="flex-container">
         <div class="lineas-container">

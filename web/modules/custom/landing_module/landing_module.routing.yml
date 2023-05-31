@@ -4,3 +4,17 @@ landing_module.home:
     _controller: '\Drupal\landing_module\Controller\LandingModuleController::mapPageContent'
   requirements: 
     _permission: 'access content'
+
+landing_module.person_form:
+  path: '/person/identification'
+  defaults:
+    _controller: '\Drupal\landing_module\Controller\PersonFormController::mapPageContent'
+  requirements: 
+    _permission: 'access content'
+
+landing_module.resume:
+  path: '/resume'
+  defaults:
+    _controller: '\Drupal\landing_module\Controller\ResumeController::mapPageContent'
+  requirements: 
+    _permission: 'access content'

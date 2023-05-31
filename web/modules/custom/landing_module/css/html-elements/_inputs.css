@@ -1,15 +1,18 @@
-.form-container__input {
+.form-container__input,
+.form-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.3rem;
 }
 
+label,
 .form-container__input__label {
     font-weight: 600;
     font-size: var(--fontSize-2);
     color: var(--gris-800);
     margin: 10px 0 5px 0;
     min-width: 300px;
+    display: block;
 }
 
 .form-container__input__input {
@@ -19,6 +22,16 @@
     background-color: white;
     font-size: var(--fontSize-3);
     transition: all .2s ease-in-out;
+    max-width: calc(100% - 26px);
+    min-width: calc(100% - 26px);
+}
+
+select.form-container__input__input {
+    min-width: 100%;
+}
+
+.form-item {
+    margin-bottom: 24px;
 }
 
 .form-container__input__input:active,
@@ -33,21 +46,22 @@
     font-style: italic;
 }
 
-.form-container__input__error,
-.form-container__input__error label,
-.form-container__input__error-message,
-.form-container__input__error label span {
+.form-container__input__input.error,
+.form-item--error label,
+.form-item--error-message,
+.form-item--error label span {
     color: var(--error);
     font-size: var(--fontSize-2);
+    margin-top: 5px;
+    font-weight: 500;
 }
 
-.form-container__input__error label span {
+.form-container__input__input.error,
+label span {
     font-size: var(--fontSize-3);
 }
 
-.form-input__input__error,
-.form-input__input,
-.form-input__textarea {
+.form-container__input__input.error {
     border-color: var(--error);
     background-color: var(--bg-error);
 }
@@ -70,10 +84,8 @@
     width: 100%;
 }
 
-.form-container__button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.form-container .primary-button {
+    align-self: center;
 }
 
 @media screen and (max-width: 500px) {

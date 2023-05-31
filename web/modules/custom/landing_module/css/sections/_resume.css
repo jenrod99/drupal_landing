@@ -1,0 +1,13 @@
+.resume-info-content {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.resume-info-content span {
+    color: var(--rojo-600);
+    font-size: 4rem;
+}
+
+.resume-info-content p {
+    margin: 0;
+}

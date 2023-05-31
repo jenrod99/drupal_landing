@@ -1,3 +1,4 @@
+input[type=submit],
 button {
     border: 1px solid transparent;
     font-family: "Raleway";
@@ -18,8 +19,10 @@ button {
     justify-content: center;
     padding: 10px 16px;
     font-size: var(--fontSize-3);
+    text-transform: uppercase;
 }
 
+input[type=submit]:hover,
 button:hover {
     border: 1px solid transparent;
     text-decoration: none;
@@ -27,6 +30,8 @@ button:hover {
     transform: scale(0.97);
 }
 
+input[type=submit]:disabled,
+input[type=submit]:disabled:hover,
 button:disabled,
 button:disabled:hover {
     cursor: not-allowed;
@@ -40,14 +45,20 @@ button:disabled:hover {
 
 button:not(:disabled):not(.disabled):focus,
 button:not(:disabled):not(.disabled).focus,
-button:focus {
+button:focus,
+input[type=submit]:not(:disabled):not(.disabled):focus,
+input[type=submit]:not(:disabled):not(.disabled).focus,
+input[type=submit]:focus {
     box-shadow: 0 0 3px 1px;
     border: 1px solid transparent;
 }
 
 button:not(:disabled):not(.disabled):active,
 button:not(:disabled):not(.disabled).active,
-button:active {
+button:active,
+input[type=submit]:not(:disabled):not(.disabled):active,
+input[type=submit]:not(:disabled):not(.disabled).active,
+input[type=submit]:active {
     border: 1px solid transparent;
     transition: all 0.1s ease;
     transform: scale(1);
@@ -55,16 +66,22 @@ button:active {
 
 button:first-child,
 button:last-child,
-button:last-of-type {
+button:last-of-type,
+input[type=submit]:first-child,
+input[type=submit]:last-child,
+input[type=submit]:last-of-type {
     margin-right: 0;
     margin-bottom: 0;
 }
 
 button:first-child,
-button:first-of-type {
+button:first-of-type,
+input[type=submit]:first-child,
+input[type=submit]:first-of-type {
     margin-left: 0;
 }
 
+input[type=submit],
 .primary-button {
     background-color: var(--rojo-primario);
     background: var(--rojo-primario);
@@ -72,6 +89,7 @@ button:first-of-type {
     color: white;
 }
 
+input[type=submit]:hover,
 .primary-button:hover {
     background: var(--rojo-700);
     background-color: var(--rojo-700);
@@ -83,7 +101,13 @@ button:not(:disabled):not(.disabled).focus,
 button:focus,
 button:not(:disabled):not(.disabled):active,
 button:not(:disabled):not(.disabled).active,
-button:active {
+button:active,
+input[type=submit]:not(:disabled):not(.disabled):focus,
+input[type=submit]:not(:disabled):not(.disabled).focus,
+input[type=submit]:focus,
+input[type=submit]:not(:disabled):not(.disabled):active,
+input[type=submit]:not(:disabled):not(.disabled).active,
+input[type=submit]:active {
     background: var(--rojo-600);
     background-color: var(--rojo-600);
     box-shadow: 0 0 3px 1px var(--rojo-100);

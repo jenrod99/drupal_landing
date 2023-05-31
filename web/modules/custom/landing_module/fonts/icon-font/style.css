@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'mapfre-icon';
+  src: url('mapfre-icon.woff') format('woff'),
+    url('mapfre-icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="mapfre-"], [class*=" mapfre-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mapfre-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mapfre-women-secure-icon:before {
+  content: "\e900";
+}
+.mapfre-women-icon:before {
+  content: "\e901";
+}
+.mapfre-whatsapp-icon:before {
+  content: "\e902";
+}
+.mapfre-vidrio-cobertura-icon:before {
+  content: "\e903";
+}
+.mapfre-vehicle-secure-icon:before {
+  content: "\e904";
+}
+.mapfre-twitter-icon:before {
+  content: "\e905";
+}
+.mapfre-trebol-secure-icon:before {
+  content: "\e906";
+}
+.mapfre-terms-icon:before {
+  content: "\e907";
+}
+.mapfre-super-trebol-secure-icon:before {
+  content: "\e908";
+}
+.mapfre-reemplazo-cobertura-icon:before {
+  content: "\e909";
+}
+.mapfre-public-icon:before {
+  content: "\e90a";
+}
+.mapfre-phone-icon:before {
+  content: "\e90b";
+}
+.mapfre-network-icon:before {
+  content: "\e90c";
+}
+.mapfre-moto-icon:before {
+  content: "\e90d";
+}
+.mapfre-menu-icon:before {
+  content: "\e90e";
+}
+.mapfre-men-icon:before {
+  content: "\e90f";
+}
+.mapfre-medico-cobertura-icon:before {
+  content: "\e910";
+}
+.mapfre-market-icon:before {
+  content: "\e911";
+}
+.mapfre-link-icon:before {
+  content: "\e912";
+}
+.mapfre-legal-cobertura-icon:before {
+  content: "\e913";
+}
+.mapfre-instagram-icon:before {
+  content: "\e914";
+}
+.mapfre-history-icon:before {
+  content: "\e915";
+}
+.mapfre-headphone-icon:before {
+  content: "\e916";
+}
+.mapfre-grua-cobertura-icon:before {
+  content: "\e917";
+}
+.mapfre-fb-icon:before {
+  content: "\e918";
+}
+.mapfre-family-secure-icon:before {
+  content: "\e919";
+}
+.mapfre-exequial-cobertura-icon:before {
+  content: "\e91a";
+}
+.mapfre-email-icon:before {
+  content: "\e91b";
+}
+.mapfre-educacion-cobertura-icon:before {
+  content: "\e91c";
+}
+.mapfre-data-privacy-icon:before {
+  content: "\e91d";
+}
+.mapfre-conductor-cobertura-icon:before {
+  content: "\e91e";
+}
+.mapfre-compare-icon:before {
+  content: "\e91f";
+}
+.mapfre-car-icon:before {
+  content: "\e920";
+}
+.mapfre-canasta-familiar-cobertura-icon:before {
+  content: "\e921";
+}
+.mapfre-asistencia-cobertura-icon:before {
+  content: "\e922";
+}
+.mapfre-amparo-cobertura-icon:before {
+  content: "\e923";
+}
+.mapfre-accidente-cobertura-icon:before {
+  content: "\e924";
+}

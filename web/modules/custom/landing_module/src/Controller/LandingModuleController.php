@@ -22,8 +22,24 @@ class LandingModuleController extends ControllerBase
         );
     }
 
+    public function navBar()
+    {
+        return [
+            '#theme' => 'nav_bar_template',
+            '#value' => 'contacto@alseguros.co',
+            '#landingIsActive' => true,
+            '#attached' => [
+                'library' => [
+                    'landing_module/landing_module',
+                ],
+            ],
+        ];
+    }
+
     public function welcomeInfo()
     {
+        $vehicleForm = $this->formBuilder()->getForm('Drupal\landing_module\Form\VehicleForm');
+
         $comments = [];
         $comments[] = [
             'userIcon' => 'mapfre-men-icon',
@@ -89,6 +105,7 @@ class LandingModuleController extends ControllerBase
         ];
         return [
             '#theme' => 'landing_module_template',
+            '#form' => $vehicleForm,
             '#comments' => $comments,
             '#benefits' => $benefits,
             '#attached' => [
@@ -110,23 +127,11 @@ class LandingModuleController extends ControllerBase
         ];
     }
 
-    public function navBar()
-    {
-        return [
-            '#theme' => 'nav_bar_template',
-            '#value' => 'contacto@alseguros.co',
-            '#attached' => [
-                'library' => [
-                    'landing_module/landing_module',
-                ],
-            ],
-        ];
-    }
-
     public function mapPageContent()
     {
         $build = [];
         $build[] = $this->navBar();
+        $build[] = $this->formBuilder()->getForm('Drupal\landing_module\Form\VehicleForm');;
         $build[] = $this->welcomeInfo();
         $build[] = $this->footer();
         return $build;

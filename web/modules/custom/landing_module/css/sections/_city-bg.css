@@ -1,0 +1,8 @@
+.city-background {
+    background-image: url("../../img/cityDos.svg");
+    width: 100%;
+    height: 30vh;
+    filter: opacity(0.3);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}

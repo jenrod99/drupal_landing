@@ -1,6 +1,6 @@
 <nav class="navigation-container">
     <div class="navigation-content">
-        <a class="home-logo" routerLink="/"></a>
+        <a class="home-logo" href="/"></a>
         <div class="navigation-icons-container">
             <a class="navigation-icon" target="_blank">
                 <span class="mapfre-whatsapp-icon"></span>
@@ -17,3 +17,12 @@
         </div>
     </div>
 </nav>
+{% if landingIsActive == true %}
+<div class="background">
+</div>
+<div class="home-text">
+    <h1>Cotiza y compra el seguro todo riesgo de tu vehículo</h1>
+    <h2>Descubre todas las opciones que tenemos para ti y tu vehículo</h2>
+    <p class="home-text-white text-form">Realiza tu cotización completamente gratis</p>
+</div>
+{% endif %}
